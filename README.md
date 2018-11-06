@@ -1,11 +1,11 @@
 # HObfuscator
-Основа для написания обфускатора
+Base project to implement obfuscator
 
-#### Что реализовано?
-* Ренейминг классов
-* Ренейминг методов
-* Ренейминг филдов
-* Инлайнинг геттеров/сеттеров
-* Затирание информации о дженериках
-* Затирание дебаг инфы созданной через -javac
-* Изменение модификаторов у филдов/методов
+#### What is implemented?
+* Class renaming
+* Methods renaming
+* Field renaming
+* Getters/setters inlining
+* Generic type erasure
+* Debug info erasure
+* Changing fields/methods/classes modifiers

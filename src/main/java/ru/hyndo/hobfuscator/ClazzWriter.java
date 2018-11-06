@@ -21,6 +21,10 @@ public class ClazzWriter implements Opcodes {
     private RenamingStrategy renamingStrategy;
 
     public byte[] writeClazz(Clazz clazz, ClassReader classReader, RenamingStrategy renamingStrategy, ManyDelegatingFeature delegatingFeature) {
+        Objects.requireNonNull(clazz);
+        Objects.requireNonNull(classReader);
+        Objects.requireNonNull(classReader);
+        Objects.requireNonNull(delegatingFeature);
         this.renamingStrategy = renamingStrategy;
         ClassWriter cw = new ClassWriter(COMPUTE_FRAMES | COMPUTE_MAXS);
         ModifierClassWriter mcw = new ModifierClassWriter(ASM5, cw, clazz, renamingStrategy);
